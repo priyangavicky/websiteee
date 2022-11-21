@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="path"></div>
+        <div class="logo">
+        <img src="images/img1.png">
+    </div>
+        <ul>
+<li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+<li><a href=""><i class="fa fa-certificate" aria-hidden="true"></i>Services</a></li>
+<li><a href=""><i class="fa fa-address-book" aria-hidden="true"></i>Contact</a></li>
+<li><a href=""><i class="fa fa-envelope-open" aria-hidden="true"></i>About us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="thumbnail">
+            <li><img src="images/bike.png" onclick="big('images/bike.png');path('grey');bg('purple')"></li>
+            <li><img src="images/bike2.png" onclick="big('images/bike2.png');path('yellow');bg('red')"></li>
+            <li><img src="images/bike3.png" onclick="big('images/bike3.png');path('violet');bg('yellowgreen')"></li>
+        </div>
+        <div class="big-img">
+            <img src="images/bike3.png" class="big">
+        </div>
+        <div class="content">
+            <p>&#x1f525;Let's ride&#x1f525;</p><br>
+            <h1>Don't Fear Dying  &nbsp;&nbsp;Fear Not Living</h1><br>
+            <h5>&#x1F60E;For Bike Lovers & Bike Riders&#x1F49D;</h5>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+        <p><small>contactus@gmail.com</small></p>
+        </div>
+    </footer>
+</body>
+   <script>
+        function big(img){
+    document.querySelector('.big').src=img;
+}
+function path(color)
+{
+    const path=document.querySelector('.path');
+    path.style.background=color;
+}
+function bg(background){
+    const bg=document.querySelector('body');
+    bg.style.background=background;
+}
+
+    </script>
+
+
+</html>
